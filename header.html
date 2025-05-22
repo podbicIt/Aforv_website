@@ -1,0 +1,105 @@
+<header id="header" class="fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark py-0 px-5">
+    <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+    <!-- Nav Toggle Button -->
+    <button class="navbar-toggler my-2" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav" 
+       aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Nav Links -->
+    <div class="collapse navbar-collapse lh-lg" id="main_nav">
+       <ul class="navbar-nav p-3 p-md-0">
+          <li class="nav-item"> <a class="nav-link" href="index.html">Home</a> </li>
+          
+          <!-- Mega Menu -->
+          <li class="nav-item dropdown ktm-mega-menu">
+             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">SERVICES</a>
+             <!-- Mega Menu -->
+             <div class="dropdown-menu mega-menu">
+              <div class="row">
+                <div class="col-12 col-md-6 offset-lg-6">
+                  <div class="row">
+                    <div class="col-6">
+                      <h6 class="submenu-underline">Digital Product Engineering</h6>
+                      <ul class="pt-2">
+                        <li><a href="services-Application&Product-Modernization.html">Application & Product Modernization</a></li>
+                        <li><a href="services-Digital-Engineering-Services.html">Digital Engineering Services</a></li>
+                        <li><a href="services-Application-Product-Development.html">Application / Product Development</a></li>
+                        <li><a href="services-Devops-Automation-Support.html">Devops, Automation & Support</a></li>
+                        <li><a href="services-Quality-Assurance.html">Quality Assurance</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-6">
+                      <h6 class="submenu-underline">Data Engineering</h6>
+                      <ul class="pt-2">
+                        <li><a href="services-AI-ML.html">AI/ML</a></li>
+                        <li><a href="services-Data-Analytics.html">Data Analytics</a></li>
+                      </ul>
+                      <h6 class="submenu-underline mt-2">Enterprise Applications</h6>
+                      <ul class="pt-2">
+                        <li><a href="services-Packaged-Applications.html">Packaged Applications</a></li>
+                        <li><a href="services-SaaS-Applications.html">SaaS Applications</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="row mt-3" style="border-top:solid 1px #ccc">
+                    <div class="col-6 pt-3">
+                      <h6 class="submenu-underline" style="padding-top:10px">Cloud Solutions</h6>
+                      <ul class="pt-2">
+                        <li><a href="services-Advisory-Audit-Services.html">Advisory & Audit Services</a></li>
+                        <li><a href="services-Migration-Transformation.html">Migration & Transformation</a></li>
+                        <li><a href="services-Cloud Security.html">Cloud Security</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-6 pt-3">
+                      <h6 class="submenu-underline" style="padding-top:10px">Bpm & Integration Services</h6>
+                      <ul class="pt-2">
+                        <li><a href="services-Low-Code-Application-Development.html">Low Code Application Development</a></li>
+                        <li><a href="services-Process Automate.html">Process Automation</a></li>
+                        <li><a href="services-Integration.html">Integration</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  
+                </div>
+               
+
+              </div>
+             </div>
+          </li>
+          <li class="nav-item dropdown">
+             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">PRACTICES</a>
+             <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="practices-AI-ML.html">AI/ML</a></li>
+                <li><a class="dropdown-item" href="practices-Digital-Technologies.html">Digital Technologies</a></li>
+                <li><a class="dropdown-item" href="practices-Salesforce.html">Salesforce</a></li>
+                <li><a class="dropdown-item" href="practices-Power-Platform.html">Power Platform</a></li>
+             </ul>
+          </li> 
+          <!-- Tree Menu -->
+          <li class="nav-item dropdown">
+             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">  Industries  </a>
+             <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="industries-Insurance.html">Insurance</a></li>
+                <li><a class="dropdown-item" href="industries-Health-Care.html">Health Care</a></li>
+                <li><a class="dropdown-item" href="industries-Manufacturing.html">Manufacturing</a></li>
+             </ul>
+          </li>
+          <li class="nav-item"> <a class="nav-link" href="about-us.html">ABOUT US</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="contact.html">Contact</a> </li>
+       </ul>
+    </div>
+ </nav>
+ <script>
+  $(function () {
+      var Activepage = window.location.pathname.replace("/", "").toLowerCase();
+      if (Activepage == "" || Activepage == "index") {
+          return
+      }
+      else {
+          $(".active").removeClass("active");
+          $("#" + Activepage).addClass("active");
+      }
+  })
+</script>
+</header><!-- End Header -->
